@@ -1,13 +1,11 @@
 import sys
-sys.stdin = open("PYTHON/swea/2058_input.txt", "r")
 
-N = int(input())
-result = 0
+sys.stdin = open("2058_input.txt", "r")
 
-while True:
-    result += N % 10
-    N = N // 10
-    if N == 0:
-        break
+N = input()  # 입력받은 숫자(문자형)
+answer = 0  # 합계를 구할 변수
 
-print(result)
+for n in N:  # 각 자릿수
+    answer += int(n)  # 정수형으로 변환해서 더하기
+
+print(answer)

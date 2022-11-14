@@ -1,10 +1,8 @@
 import sys
-sys.stdin = open("PYTHON/swea/2050_input.txt", "r")
 
-C = {}
-C = input()
+sys.stdin = open("2050_input.txt", "r")
 
-for i in range(0, len(C)):
-    print(ord(C[i])-64, end=' ')
-    i += 1
+C = input()  # 입력받은 문자열
 
+for i in C:
+    print(ord(i) - 64, end=" ")  # 아스키코드 숫자값에서 64만큼 빼고 출력
