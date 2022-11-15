@@ -1,7 +1,8 @@
 import sys
+
 sys.stdin = open("PYTHON/swea/2019_input.txt", "r")
 
-T = int(input())
+N = int(input())  # 주어진 횟수
 
-for test_case in range(1, T+2):
-    print(1*(2**(test_case-1)), end=' ')
+for n in range(N + 1):
+    print(2**n, end=" ")  # 2의 0~N제곱 출력

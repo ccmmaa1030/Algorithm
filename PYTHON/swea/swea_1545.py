@@ -1,9 +1,8 @@
 import sys
+
 sys.stdin = open("PYTHON/swea/1545_input.txt", "r")
 
-T = int(input())
+N = int(input())  # 주어진 숫자 N
 
-for test_case in range(1, T+1):
-    print(T, end=' ')
-    T -= 1
-print(0)
+for n in range(N, -1, -1):  # N부터 0까지 1씩 줄어들면서 거꾸로
+    print(n, end=" ")  # 해당 숫자를 출력
